@@ -1,0 +1,163 @@
+:root{
+  --button:hsl(163, 95%, 43%);
+}
+body{
+  margin: 0;
+  font-family: 'Open Sans' ;
+}
+h1, h2,{
+  font-family: 'Raleway';
+  text-transform: capitalize;
+}
+h2{
+  text-align: center;
+}
+h3{
+  font-family: 'Raleway';
+}
+a{
+  text-decoration: none;
+}
+main a{
+  color: white;
+}
+.container{
+  margin: 0 10%;
+}
+.button{
+  background-color: var(--button);
+  font-weight: 700;
+  border: none;
+  border-radius: .2em;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  transition: .3s;
+  color: white;
+  }
+.button:hover{
+  transform: scale(1.1);
+}
+.button:active{
+  transform: scale(.9);
+}
+main{
+  background: black;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.user{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10em;
+}
+.hero{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .text{
+  width: 40vw;
+}
+.caract{
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.caract .content{
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+.content figure{
+  width: 80%;
+}
+.content figure img{
+  width: 100%;
+}
+.content .grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20%;
+  font-size: .9em;
+}
+.get{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.get .content{
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+}
+.get .content form{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  grid-gap: 3em;
+  box-sizing: border-box;
+}
+.get .content form input{
+  width: 100%;
+  border-radius: .2em;
+  border: none;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  padding: 1em;
+}
+footer{
+  background: black;
+  height: 40vh;
+  padding-top: 5em;
+}
+footer .container{
+  color: white;
+  display: flex;
+}
+footer a{
+  font-size: .9em;
+  color: white;
+}
+footer .contact{
+  width: 15em;
+}
+footer nav{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4em;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  justify-items:center;
+  padding: 0 2em;
+}
+footer .list ul{
+  padding: 0;
+}
+footer .list li{
+  list-style: none;
+}
+footer .form{
+  width: 30%;
+  padding-left: 5em;
+}
+footer form{
+  width: 100%;
+}
+footer form input{
+  width: 100%;
+  border-radius: .2em;
+  padding: .5em;
+  box-sizing: border-box;
+}
+footer .form form .button{
+  width: 60%;
+  float: right;
+  margin-top: 1em;
+}
