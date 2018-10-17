@@ -21,6 +21,7 @@ h3{
 }
 a{
   text-decoration: none;
+  transition: .3s;
 }
 figure{
   margin: 0;
@@ -40,9 +41,10 @@ main a{
   transition: .3s;
   color: white;
   font-size: 1em;
+  cursor: pointer;
   }
 .button:hover{
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .button:active{
   transform: scale(.9);
@@ -74,16 +76,19 @@ header{
   justify-content: space-between;
 }
 .hero .text{
-  display: block;
+  display: grid;
   width: 40vw;
-}
-.hero .text h1{
-  margin: 1em 0;
 }
 .get-hero{
   padding: .8em 5em;
-  margin: 2em 0;
   font-size: 1.2em;
+  width: 6em;
+}
+.hero .text a:hover{
+  transform: scale(1.1);
+}
+a:hover{
+  transform: scale(.9)
 }
 main .triangle{
   width: 0;
@@ -232,4 +237,115 @@ footer .form form .button{
   width: 60%;
   float: right;
   margin-top: 1em;
+}
+@media screen and (max-width:1000px){
+  footer nav {
+    grid-gap: 2em;
+  }
+  footer .form{
+    padding-left: 2em;
+  }
+}
+@media screen and (max-width:900px){
+  header{
+    margin-bottom: 6em;
+  }
+  .hero{
+    flex-direction: column-reverse;
+  }
+  .caract{
+    height: auto;
+  }
+  .caract .content{
+    display: block;
+  }
+  .content figure{
+    margin: 0 auto;
+  }
+  .caract .content .grid{
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width:767px){
+  h2{
+    font-size: 2em;
+  }
+  header{
+    height: 3em;
+    /* display: flex;
+    align-items: center; */
+  }
+  header figure{
+    height: 100%;
+  }
+  header figure img{
+    width: 100%;
+  }
+  .user{
+    width: 50%;
+    font-size: .8em;
+  }
+  .user .sign-up.button{
+    padding: .5em;
+  }
+  .container{
+    margin: 0 1em;
+  }
+  .hero{
+    padding-bottom: 5em;
+  }
+  .hero .text{
+    width: 95%;
+    text-align: center;
+  }
+  .get-hero{
+    /* padding: .8em 3em; */
+  }
+  .hero img{
+    width: 60%;
+  }
+  main .triangle{
+    border-width: 3em 0 0 100vw;
+  }
+  .get .content{
+    width: 95%;
+  }
+  .get .content form{
+    display: block;
+  }
+  .get .content form input{
+    width: 100%;
+    box-sizing:border-box;
+    margin: 1em 0;
+  }
+  footer{
+    height: auto;
+  }
+  footer .triangle{
+    border-width: 0 100vw 3em 0;
+  }
+  footer .container{
+    display: grid;
+    grid-template-areas: "contact" "form" "nav";
+    grid-gap: 3em;
+  }
+  footer .contact{
+    grid-area: contact;
+  }
+  footer nav{
+    padding: 0;
+    grid-area: nav;
+    grid-template-columns: 1fr;
+    border: none;
+    justify-items:start;
+  }
+  footer .form{
+    padding: 0;
+    grid-area: form;
+    width: auto;
+    max-width: 30em;
+    text-align: center;
+  }
 }
