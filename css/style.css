@@ -1,5 +1,9 @@
 :root{
   --button:hsl(163, 95%, 43%);
+  --footer:hsl(243, 87%, 12%);
+  --main1:hsl(243, 87%, 12%);
+  --main2:hsl(242, 76%, 70%);/*hsl(243, 86%, 85%)*/
+
 }
 body{
   margin: 0;
@@ -40,7 +44,7 @@ main a{
   transform: scale(.9);
 }
 main{
-  background: black;
+  background: linear-gradient(to right, var(--main1),var(--main2) );
 }
 header{
   display: flex;
@@ -76,8 +80,15 @@ header{
   padding: 1em 6em;
   margin: 2em 0;
 }
+main .triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 0 0 100vw;
+  border-color: transparent transparent transparent #ffffff;
+}
 .caract{
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-content: center;
   flex-direction: column;
@@ -103,7 +114,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 70vh;
 }
 .get .content{
   justify-content: center;
@@ -126,13 +137,21 @@ header{
   padding: 1em;
 }
 footer{
-  background: black;
-  height: 40vh;
-  padding-top: 5em;
+  background: var(--footer);
+  height: 60vh;
+  padding-bottom: 5em;
+}
+footer .triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 200px 0;
+  border-color: transparent #ffffff transparent transparent;
 }
 footer .container{
   color: white;
   display: flex;
+  padding-top: 2em;
 }
 footer a{
   font-size: .9em;
