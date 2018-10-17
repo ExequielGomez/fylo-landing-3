@@ -22,6 +22,9 @@ h3{
 a{
   text-decoration: none;
 }
+figure{
+  margin: 0;
+}
 main a{
   color: white;
 }
@@ -36,6 +39,7 @@ main a{
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   transition: .3s;
   color: white;
+  font-size: 1em;
   }
 .button:hover{
   transform: scale(1.1);
@@ -77,14 +81,15 @@ header{
   margin: 1em 0;
 }
 .get-hero{
-  padding: 1em 6em;
+  padding: .8em 5em;
   margin: 2em 0;
+  font-size: 1.2em;
 }
 main .triangle{
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 200px 0 0 100vw;
+  border-width: 100px 0 0 100vw;
   border-color: transparent transparent transparent #ffffff;
 }
 .caract{
@@ -145,13 +150,13 @@ footer .triangle{
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 100vw 200px 0;
+  border-width: 0 100vw 100px 0;
   border-color: transparent #ffffff transparent transparent;
 }
 footer .container{
   color: white;
   display: flex;
-  padding-top: 2em;
+  padding-top: 5em;
 }
 footer a{
   font-size: .9em;
@@ -159,6 +164,35 @@ footer a{
 }
 footer .contact{
   width: 15em;
+}
+footer .contact figure{
+  width: 100%;
+  padding-bottom: 2em 0;
+}
+footer .contact figure img{
+  width: 70%;
+  position: relative;
+  right: -1em;
+}
+footer .contact .data{
+  margin: 1em 0;
+}
+footer .contact .line{
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+}
+footer .icon{
+  padding: .5em;
+  margin: 0 .5em;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.icon-phone{
+  background-image: url("../images/icon-phone.svg");
+}
+.icon-mail{
+  background-image: url("../images/icon-email.svg");
 }
 footer nav{
   display: grid;
@@ -169,13 +203,18 @@ footer nav{
   justify-items:center;
   padding: 0 2em;
 }
+footer .list strong{
+}
 footer .list ul{
+  margin: 1.5em 0;
   padding: 0;
 }
 footer .list li{
   list-style: none;
+  margin: .6em 0;
 }
 footer .form{
+  font-size: .9em;
   width: 30%;
   padding-left: 5em;
 }
@@ -186,6 +225,7 @@ footer form input{
   width: 100%;
   border-radius: .2em;
   padding: .5em;
+  margin-top: 1em;
   box-sizing: border-box;
 }
 footer .form form .button{
