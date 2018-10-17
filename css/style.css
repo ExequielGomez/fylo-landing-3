@@ -87,9 +87,6 @@ header{
 .hero .text a:hover{
   transform: scale(1.1);
 }
-a:hover{
-  transform: scale(.9)
-}
 main .triangle{
   width: 0;
   height: 0;
@@ -217,6 +214,10 @@ footer .list ul{
 footer .list li{
   list-style: none;
   margin: .6em 0;
+  transition: .2s;
+}
+.list li:hover{
+  transform: translate(.5em);
 }
 footer .form{
   font-size: .9em;
