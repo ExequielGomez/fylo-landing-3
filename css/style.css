@@ -5,7 +5,7 @@ body{
   margin: 0;
   font-family: 'Open Sans' ;
 }
-h1, h2,{
+h1, h2{
   font-family: 'Raleway';
   text-transform: capitalize;
 }
@@ -46,13 +46,18 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1em;
+  padding-top: 1em;
 }
 .user{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 10em;
+  width: 15em;
+}
+.user .sign-up.button{
+  padding: 1em;
+  width: 50%;
+  text-align: center;
 }
 .hero{
   color: white;
@@ -61,7 +66,15 @@ header{
   justify-content: space-between;
 }
 .hero .text{
+  display: block;
   width: 40vw;
+}
+.hero .text h1{
+  margin: 1em 0;
+}
+.get-hero{
+  padding: 1em 6em;
+  margin: 2em 0;
 }
 .caract{
   height: 100vh;
