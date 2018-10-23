@@ -229,6 +229,7 @@ footer form{
 }
 footer form input{
   width: 100%;
+  border: none;
   border-radius: .2em;
   padding: .5em;
   margin-top: 1em;
@@ -346,7 +347,6 @@ footer .form form .button{
     padding: 0;
     grid-area: form;
     width: auto;
-    max-width: 30em;
     text-align: center;
   }
 }
