@@ -42,9 +42,12 @@ main a{
   color: white;
   font-size: 1em;
   cursor: pointer;
+  box-sizing: border-box;
   }
 .button:hover{
-  transform: scale(1.08);
+  color: var(--button);
+  border: 2px solid var(--button);
+  background: transparent;
 }
 .button:active{
   transform: scale(.9);
@@ -82,10 +85,8 @@ header{
 .get-hero{
   padding: .8em 5em;
   font-size: 1.2em;
-  width: 6em;
-}
-.hero .text a:hover{
-  transform: scale(1.1);
+  width: 50%;
+  border: 2px solid var(--button);
 }
 main .triangle{
   width: 0;
@@ -215,6 +216,7 @@ footer .list li{
   list-style: none;
   margin: .6em 0;
   transition: .2s;
+  will-change: transform;
 }
 .list li:hover{
   transform: translate(.5em);
@@ -229,6 +231,7 @@ footer form{
 }
 footer form input{
   width: 100%;
+  border: none;
   border-radius: .2em;
   padding: .5em;
   margin-top: 1em;
@@ -302,7 +305,7 @@ footer .form form .button{
     text-align: center;
   }
   .get-hero{
-    /* padding: .8em 3em; */
+    margin: 2em 0;
   }
   .hero img{
     width: 60%;
@@ -346,7 +349,6 @@ footer .form form .button{
     padding: 0;
     grid-area: form;
     width: auto;
-    max-width: 30em;
     text-align: center;
   }
 }
