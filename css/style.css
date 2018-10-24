@@ -85,7 +85,7 @@ header{
 .get-hero{
   padding: .8em 5em;
   font-size: 1.2em;
-  width: 50%;
+  width: 16em;
   border: 2px solid var(--button);
 }
 main .triangle{
@@ -257,6 +257,9 @@ footer .form form .button{
   .hero{
     flex-direction: column-reverse;
   }
+  .get-hero{
+    width:50%;
+  }
   .caract{
     height: auto;
   }
@@ -278,8 +281,6 @@ footer .form form .button{
   }
   header{
     height: 3em;
-    /* display: flex;
-    align-items: center; */
   }
   header figure{
     height: 100%;
